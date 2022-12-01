@@ -17,8 +17,8 @@
 h1{
     font-size: 50px;
 }
-/*Position values and meaning table*/
 
+/*Position values and meaning table*/
 table {
     border-style:solid;
     border-color: lightblue;
@@ -46,3 +46,61 @@ td:first-child{
     border-right-color: lightblue;
     border-right-style: solid;
 }
+
+/* Styling for the boxes used to show position*/
+.box {
+    height:40px;
+    width: 85%;
+    background-color: lightblue;
+    border-style: solid;
+    border-color:midnightblue;
+    border-width: 2px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+.box.static{
+    position:static;
+}
+
+.box.relative{
+    position:relative;
+    left:50px;
+}
+
+.box.fixed{
+    position: fixed;
+    top: 440px;
+    left: 20;
+}
+
+/*the absolute element is position relative to the big box element*/
+.big{
+    height:80px;
+    width: 90%;
+    background-color: greenyellow;
+    border-style: solid;
+    border-color:green;
+    border-width: 2px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.box.absolute{
+    position: absolute;
+    left:20px;
+    top:20px;
+}
+
+.box.sticky{
+    position:sticky;
+    left:20px;
+    top:600px;
+}
+
+
+
+
+
