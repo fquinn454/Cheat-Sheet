@@ -64,18 +64,6 @@ td:first-child{
     text-align: center;
 }
 
-.inner {
-    height:40px;
-    width: 80%;
-    background-color: lightblue;
-    border-style: solid;
-    border-color:midnightblue;
-    border-width: 2px;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
 .box.static{
     position:static;
 }
@@ -92,7 +80,7 @@ td:first-child{
     margin-right: 20px;
 }
 
-/*the absolute element is position relative to this big box element*/
+/*the absolute element is positioned relative to this big box element*/
 .big{
     height:80px;
     width: 40%;
@@ -104,8 +92,20 @@ td:first-child{
     text-align: center;
     display: block;
 }
+/*This inner box goes inside the big box above to show abosolute positioning*/
+.innerbox {
+    height:40px;
+    width: 80%;
+    background-color: lightblue;
+    border-style: solid;
+    border-color:midnightblue;
+    border-width: 2px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
 
-.inner.absolute{
+.innerbox.absolute{
     position: absolute;
     left:30px;
     top:20px;
