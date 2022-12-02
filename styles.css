@@ -18,6 +18,10 @@ h1{
     font-size: 50px;
 }
 
+h2.center{
+    text-align: center;
+}
+
 /*Position values and meaning table*/
 table {
     border-style:solid;
@@ -50,15 +54,26 @@ td:first-child{
 /* Styling for the boxes used to show position*/
 .box {
     height:40px;
-    width: 85%;
+    width: 45%;
     background-color: lightblue;
     border-style: solid;
     border-color:midnightblue;
     border-width: 2px;
-    font-size: 24px;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    
+}
+
+.inner {
+    height:40px;
+    width: 80%;
+    background-color: lightblue;
+    border-style: solid;
+    border-color:midnightblue;
+    border-width: 2px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .box.static{
@@ -73,22 +88,24 @@ td:first-child{
 .box.fixed{
     position: fixed;
     top: 440px;
-    left: 20;
+    right:0;
+    margin-right: 20px;
 }
 
-/*the absolute element is position relative to the big box element*/
+/*the absolute element is position relative to this big box element*/
 .big{
     height:80px;
-    width: 90%;
+    width: 40%;
     background-color: greenyellow;
     border-style: solid;
     border-color:green;
     border-width: 2px;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
+    display: block;
 }
 
-.box.absolute{
+.inner.absolute{
     position: absolute;
     left:20px;
     top:20px;
@@ -96,8 +113,9 @@ td:first-child{
 
 .box.sticky{
     position:sticky;
-    left:20px;
-    top:600px;
+    top:650px;
+    float:right;
+    
 }
 
 
