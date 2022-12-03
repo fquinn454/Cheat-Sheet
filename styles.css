@@ -121,7 +121,7 @@ td:first-child{
 /* The website uses <div> elements to represent coloured rectangles on the page
 The rectangles are then given one of the 5 different position values*/
 
-.box .big .innerbox{
+.box, .big, .innerbox{
     border-style: solid;
     border-width: 2px;
     font-size: 16px;
@@ -129,7 +129,7 @@ The rectangles are then given one of the 5 different position values*/
     text-align: center;
 }
 
-.box .innerbox{
+.box, .innerbox{
     background-color: lightblue;
     border-color:midnightblue;
 }
