@@ -114,17 +114,12 @@ td{
 }
 
 td:first-child{
-    border-right-width: 2px;
     border-right-color: lightblue;
     border-right-style: solid;
 }
 
 /* The website uses <div> elements to represent coloured rectangles on the page
 The rectangles are then given one of the 5 different position values*/
-.box .innerbox{
-    background-color: lightblue;
-    border-color:midnightblue;
-}
 
 .box .big .innerbox{
     border-style: solid;
@@ -132,7 +127,11 @@ The rectangles are then given one of the 5 different position values*/
     font-size: 16px;
     font-family: 'Indie Flower', cursive;
     text-align: center;
+}
 
+.box .innerbox{
+    background-color: lightblue;
+    border-color:midnightblue;
 }
 
 .box {
@@ -158,29 +157,29 @@ This div displays as the large green rectangle on the page*/
     line-height: 20px;
 }
 
-.box.static{
+.static{
     position:static;
 }
 
-.box.relative{
+.relative{
     position:relative;
     left:50px;
 }
 
-.box.fixed{
+.fixed{
     position: fixed;
     top: 440px;
     right:0;
     margin-right: 20px;
 }
 
-.innerbox.absolute{
+.absolute{
     position: absolute;
     left:30px;
     top:20px;
 }
 
-.box.sticky{
+.sticky{
     position:sticky;
     top:650px;
     float:right;
