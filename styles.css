@@ -124,9 +124,13 @@ The rectangles are then given one of the 5 different position values*/
 .box, .big, .innerbox{
     border-style: solid;
     border-width: 2px;
-    font-size: 16px;
     font-family: 'Indie Flower', cursive;
+    font-weight: bold;
     text-align: center;
+}
+
+.box, .big {
+    font-size: 18px;
 }
 
 .box, .innerbox{
@@ -147,15 +151,14 @@ This div displays as the large green rectangle on the page*/
     width: 40%;
     background-color: greenyellow;
     border-color:green;
-    display: block;
-    
 }
 /*This inner box goes inside the big box above to show abosolute positioning*/
 .innerbox {
     height:90px;
     width: 90%;
-    line-height: 20px;
 }
+
+/*Each of the <div> elements is given a different position value*/
 
 .static{
     position:static;
