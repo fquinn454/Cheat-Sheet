@@ -12,4 +12,4 @@ Possible topics could be:</br>
   <li>CSS selectors and specificity</li>
   <li>Common CSS properties</li>
 </ul>
-If you choose to document HTML tags, open the hint to see how to include HTML tags as text in your code.
+
